@@ -24,7 +24,6 @@ export default function App() {
     isEmpty || (data && data[data.length - 1]?.length < PAGE_SIZE);
   const isRefreshing = isValidating && data && data.length === size;
 
-  console.log(11, issues);
   return (
     <div style={{ fontFamily: 'sans-serif' }}>
       <input
@@ -61,7 +60,7 @@ export default function App() {
         </button>
       </p>
       {isEmpty ? <p>Yay, no issues found.</p> : null}
-      {issues.map((issue) => {
+      {issues.map((issue: any) => {
         return (
           <p key={issue.id} style={{ margin: '6px 0' }}>
             - {issue.title}

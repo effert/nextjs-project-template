@@ -1,7 +1,7 @@
 'use client';
 import { SWRConfig } from 'swr';
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 export default function SwrConfigProvider({ children }: { children: any }) {
   return (
