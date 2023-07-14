@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.4.0",
@@ -18,6 +19,8 @@
     "zustand": "^4.3.9"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
@@ -25,6 +28,7 @@
     "client-only": "^0.0.1",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
+    "husky": "^8.0.3",
     "postcss": "8.4.26",
     "prettier": "^3.0.0",
     "server-only": "^0.0.1",
