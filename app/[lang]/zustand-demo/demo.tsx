@@ -1,9 +1,9 @@
-"use client"
-import { useRef, useEffect } from "react"
-import useStore from "@/lib/stores/demo"
+'use client';
+import { useRef, useEffect } from 'react';
+import useStore from '@/lib/stores/demo';
 
 export default function ZustandDemo() {
-  const { bears, increasePopulation, removeAllBears } = useStore()
+  const { bears, increasePopulation, removeAllBears } = useStore();
 
   return (
     <div>
@@ -17,5 +17,5 @@ export default function ZustandDemo() {
         </div>
       </div>
     </div>
-  )
+  );
 }
